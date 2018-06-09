@@ -11,43 +11,97 @@ ul{
 body{
 	/*miw320*/
 	min-width: 320px;
+	color: #fff;
 	/*background-image: url(../img/background.jpg);*/
 	/*background-size: cover;*/
 	/*color: #fff;*/
 }
+img{
+	max-width:100%;
+}
 /*=====================HEADER======================*/
-/*.header{*/
-	/*padding: 100px 0;*/
-/*}*/
-/*.header .title{*/
-	/*ovewflow:hidden;*/
-/*}*/
-/*.header .title img{*/
-	/*border-radius: 50%;*/
-	/*height: 185px;*/
-	/*width: 1px;*/
-/*}*/
+.header{
+	height: 100vh;
+	background-color: #18bc9c;
+}
+.header-cover{
+	text-align: center;
+	padding-top: 100px;
+}
+.header .navbar{
+	position: fixed;
+	width: 100%;
+}
+.header .image{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: auto;
+}
+.header .image img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.header-cover .name{
+	text-transform: uppercase;
+	font-size: 80px;
+	margin: 20px 0;
+}
+.portfolio-star{
+	font-size:30px;
+}
+.portfolio-star:after,
+.portfolio-star:before{
+	content: "";
+	display: block;
+	border-top:3px solid #fff;
+	width: 100px;
+}
+.portfolio-star{
+	display: inline-flex;
+	align-items: center;
+}
+.portfolio-star i{
+	margin:0 20px;
+}
+.header-cover .skills{
+	text-transform: capitalize;
+	font-size:25px;
+}
+.header{
+	padding: 100px 0;
+}
+.header .title{
+	ovewflow:hidden;
+}
+.header .title img{
+	border-radius: 50%;
+	height: 185px;
+	width: 1px;
+}
 
-/*.header .descr h1{*/
-	/*font-size: 50px;*/
-	/*color:#d5423a;*/
-/*}*/
-/*.header .descr h4{*/
-	/*font-size: 30px;*/
-/*}*/
-/*!*=========Content============*!*/
-/*.section-content .card{*/
-	/*margin-top: 20px;*/
-/*}*/
-/*.section-content .card img{*/
-	/*height: 500px;*/
-	/*width: 100%;*/
+.header .descr h1{
+	font-size: 50px;
+	color:#d5423a;
+}
+.header .descr h4{
+	font-size: 30px;
+}
+/*=========Content============*/
+.section-content .card{
+	margin-top: 20px;
+}
+.section-content .card img{
+	height: 500px;
+	width: 100%;
 
-/*}*/
-/*!*============section-footer========*!*/
-/*.section-footer{*/
-	/*padding:50px 0;*/
-/*}*/
-/*.section-footer p{*/
-	/*font-size: 16px;*/
-/*}*/
+}
+/*============section-footer========*/
+.section-footer{
+	padding:50px 0;
+}
+.section-footer p{
+	font-size: 16px;
+}
