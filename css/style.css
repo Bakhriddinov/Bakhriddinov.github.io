@@ -1,0 +1,53 @@
+a, a:hover, a:focus{
+	/*td*/
+	text-decoration: none;
+	/*c-i*/
+	color: inherit;
+}
+ul{
+	/*lis-n*/
+	list-style: none;
+}
+body{
+	/*miw320*/
+	min-width: 320px;
+	/*background-image: url(../img/background.jpg);*/
+	/*background-size: cover;*/
+	/*color: #fff;*/
+}
+/*=====================HEADER======================*/
+/*.header{*/
+	/*padding: 100px 0;*/
+/*}*/
+/*.header .title{*/
+	/*ovewflow:hidden;*/
+/*}*/
+/*.header .title img{*/
+	/*border-radius: 50%;*/
+	/*height: 185px;*/
+	/*width: 1px;*/
+/*}*/
+
+/*.header .descr h1{*/
+	/*font-size: 50px;*/
+	/*color:#d5423a;*/
+/*}*/
+/*.header .descr h4{*/
+	/*font-size: 30px;*/
+/*}*/
+/*!*=========Content============*!*/
+/*.section-content .card{*/
+	/*margin-top: 20px;*/
+/*}*/
+/*.section-content .card img{*/
+	/*height: 500px;*/
+	/*width: 100%;*/
+
+/*}*/
+/*!*============section-footer========*!*/
+/*.section-footer{*/
+	/*padding:50px 0;*/
+/*}*/
+/*.section-footer p{*/
+	/*font-size: 16px;*/
+/*}*/
