@@ -23,6 +23,7 @@ img{
 .header{
 	height: 100vh;
 	background-color: #18bc9c;
+	min-height: 480px;
 }
 .header-cover{
 	text-align: center;
@@ -31,6 +32,7 @@ img{
 .header .navbar{
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
 }
 .header .image{
 	border-radius: 50%;
@@ -70,28 +72,12 @@ img{
 	text-transform: capitalize;
 	font-size:25px;
 }
-.header{
-	padding: 100px 0;
-}
-.header .title{
-	ovewflow:hidden;
-}
-.header .title img{
-	border-radius: 50%;
-	height: 185px;
-	width: 1px;
-}
 
-.header .descr h1{
-	font-size: 50px;
-	color:#d5423a;
-}
-.header .descr h4{
-	font-size: 30px;
-}
+
 /*=========Content============*/
 .section-content .card{
 	margin-top: 20px;
+	z-index: 10;
 }
 .section-content .card img{
 	height: 500px;
@@ -104,4 +90,5 @@ img{
 }
 .section-footer p{
 	font-size: 16px;
+	color: #000;
 }
