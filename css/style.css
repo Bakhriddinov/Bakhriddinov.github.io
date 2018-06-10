@@ -23,7 +23,7 @@ img{
 .header{
 	height: 100vh;
 	background-color: #18bc9c;
-	min-height: 480px;
+	min-height: 600px;
 }
 .header-cover{
 	text-align: center;
@@ -75,6 +75,9 @@ img{
 
 
 /*=========Content============*/
+.section-content{
+	text-align: center;
+}
 .section-content .card{
 	margin-top: 20px;
 	z-index: 10;
@@ -82,8 +85,22 @@ img{
 .section-content .card img{
 	height: 500px;
 	width: 100%;
-
 }
+.section-content .portfolio-star {
+	color: #18bc9c;
+	padding: 40px 0;
+}
+.section-content .portfolio-star:after,
+.section-content .portfolio-star:before {
+	content: "";
+	display: block;
+	border-top: 3px solid #18bc9c;
+	width: 100px;
+}
+.section-content .portfolio-star{
+	 display: inline-flex;
+	 align-items: center;
+ }
 /*============section-footer========*/
 .section-footer{
 	padding:50px 0;
