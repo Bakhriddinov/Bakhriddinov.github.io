@@ -1,111 +1,167 @@
 a, a:hover, a:focus{
-	/*td*/
-	text-decoration: none;
-	/*c-i*/
-	color: inherit;
-}
-ul{
-	/*lis-n*/
-	list-style: none;
-}
-body{
-	/*miw320*/
-	min-width: 320px;
-	color: #fff;
-	/*background-image: url(../img/background.jpg);*/
-	/*background-size: cover;*/
-	/*color: #fff;*/
-}
-img{
-	max-width:100%;
-}
-/*=====================HEADER======================*/
-.header{
-	height: 100vh;
-	background-color: #18bc9c;
-	min-height: 600px;
-}
-.header-cover{
-	text-align: center;
-	padding-top: 100px;
-}
-.header .navbar{
-	position: fixed;
-	width: 100%;
-	z-index: 1000;
-}
-.header .image{
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	margin: auto;
-}
-.header .image img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-.header-cover .name{
-	text-transform: uppercase;
-	font-size: 80px;
-	margin: 20px 0;
-}
-.portfolio-star{
-	font-size:30px;
-}
-.portfolio-star:after,
-.portfolio-star:before{
-	content: "";
-	display: block;
-	border-top:3px solid #fff;
-	width: 100px;
-}
-.portfolio-star{
-	display: inline-flex;
-	align-items: center;
-}
-.portfolio-star i{
-	margin:0 20px;
-}
-.header-cover .skills{
-	text-transform: capitalize;
-	font-size:25px;
+    /*td*/
+    text-decoration: none;
+    /*c-i*/
+    color: inherit;
 }
 
+ul{
+    /*lis-n*/
+    list-style: none;
+}
+
+body{
+    /*miw320*/
+    min-width: 320px;
+    color: #fff;
+    /*background-image: url(../img/background.jpg);*/
+    /*background-size: cover;*/
+    /*color: #fff;*/
+}
+
+img{
+    max-width: 100%;
+}
+
+/*=====================HEADER======================*/
+.header{
+    height: 100vh;
+    background-color: #18bc9c;
+    min-height: 600px;
+}
+
+.header-cover{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.header .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header .image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-cover .name{
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.portfolio-star{
+    font-size: 30px;
+}
+
+.portfolio-star:after,
+.portfolio-star:before{
+    content: "";
+    display: block;
+    border-top: 3px solid #fff;
+    width: 100px;
+}
+
+.portfolio-star{
+    display: inline-flex;
+    align-items: center;
+}
+
+.portfolio-star i{
+    margin: 0 20px;
+}
+
+.header-cover .skills{
+    text-transform: capitalize;
+    font-size: 25px;
+}
 
 /*=========Content============*/
 .section-content{
-	text-align: center;
+    text-align: center;
+    padding: 80px 0;
 }
+
+.section-content .text-center .title{
+    font-size: 50px;
+    color: #18bc9c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .section-content .card{
-	margin-top: 20px;
-	z-index: 10;
+    z-index: 10;
+    margin-bottom:30px;
+}
+
+.section-content .section-content-link{
+    position: relative;
+    overflow: hidden;
 }
 .section-content .card img{
-	height: 500px;
-	width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: .3s;
 }
-.section-content .portfolio-star {
-	color: #18bc9c;
-	padding: 40px 0;
+.section-content .card:hover img{
+    transform: scale(1.1);
 }
-.section-content .portfolio-star:after,
-.section-content .portfolio-star:before {
-	content: "";
-	display: block;
-	border-top: 3px solid #18bc9c;
-	width: 100px;
+.section-content .card .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: .3s;
+    display: flex;
+    top: 0;
 }
 .section-content .portfolio-star{
-	 display: inline-flex;
-	 align-items: center;
- }
+    color: #18bc9c;
+    padding: 20px 0;
+    display: inline-flex;
+    align-items: center;
+}
+.section-content .section-content-link:hover .caption{
+    background-color: rgba(24,188,156,.7);
+}
+.section-content-link .caption i{
+    font-size:70px;
+    color: #fff;
+    margin:auto;
+    transition: .3s;
+    opacity: 0;
+}
+.section-content-link:hover .caption i{
+    opacity: 1;
+    animation-name: eye_anime;
+    animation-duration: .5s;
+}
+
+.section-content .portfolio-star:after,
+.section-content .portfolio-star:before{
+    content: "";
+    display: block;
+    border-top: 3px solid #18bc9c;
+    width: 100px;
+}
+
 /*============section-footer========*/
 .section-footer{
-	padding:50px 0;
+    padding: 50px 0;
 }
+
 .section-footer p{
-	font-size: 16px;
-	color: #000;
+    font-size: 16px;
+    color: #000;
 }
